@@ -44,7 +44,7 @@ jobs:
         docker build . -t repo:latest
 
     - name: Upload image
-      uses: ishworkh/docker-image-artifact-upload@v2.0.1
+      uses: ishworkh/container-image-artifact-upload@v2.0.0
       with:
         image: "repo:latest"
         retention_days: "1"
